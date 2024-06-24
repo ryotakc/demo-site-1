@@ -63,12 +63,6 @@ export default function RootLayout({
           <Toolbar />
         </main>
 
-        <footer className="container sticky top-full h-14 flex justify-between items-center border-t">
-          <p>&copy; leo</p>
-
-          <ModeToggle />
-        </footer>
-
         </ThemeProvider>
       </body>
     </html>

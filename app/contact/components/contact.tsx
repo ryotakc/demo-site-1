@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <Section title="Contact" subTitle="Lorem ipsum dolor sit amet consectetur.">
             <div className="container">
-                <button>お問い合わせ</button>
+                <Link href="/contact">Contact</Link>
             </div>
         </Section>
     );
