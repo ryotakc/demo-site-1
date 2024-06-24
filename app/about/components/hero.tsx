@@ -1,5 +1,6 @@
 import React from "react";
 import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -9,7 +10,9 @@ export default function Hero() {
                 <p className="text-muted-foreground mb-6">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. A, necessitatibus id. Minima, velit debitis quo aliquam quidem aspernatur, odit ipsum odio adipisci optio corporis modi nihil distinctio dignissimos eveniet est.
                 </p>
-                <Button>Contact</Button>
+                <Button>
+                    <Link href="/contact">Contact</Link>
+                </Button>
             </div>
         </div>
     );
