@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button"; // Button コンポ
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
+import Toolbar from "@/app/c/toolbar-navigation/toolbar";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="ja" suppressHydrationWarning>
       <body className={cn(inter.className, 'min-h-dvh')}>
 
       <ThemeProvider
@@ -39,9 +40,14 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
       >
+      {/*
         <header className="container h-16 flex items-center border-b justify-between">
-          <h1 className="font-bold text-2xl">LEO</h1>
-          <ul className="flex gap-4">
+          <h1 className="font-bold text-2xl">
+            <Link href="/">
+              <img src="/replicate-prediction-owmhs5nrsrgatfvdxkbgitirce copy.png" alt="Icon" className="size-10" />
+            </Link>
+          </h1>
+          <ul className="flex gap-1 lg:gap-3">
             {navItems.map((item) => (
               <li key={item.label}>
                 <Button variant="ghost" asChild>
@@ -51,9 +57,13 @@ export default function RootLayout({
               ))}
           </ul>
         </header>
-        <main>{children}</main>
+      */}
+        <main>
+          {children}
+          <Toolbar />
+        </main>
 
-        <footer className="container sticky top-full h-16 flex justify-between items-center border-t">
+        <footer className="container sticky top-full h-14 flex justify-between items-center border-t">
           <p>&copy; leo</p>
 
           <ModeToggle />

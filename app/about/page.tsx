@@ -3,6 +3,8 @@ import Hero from './components/hero';
 import Features from './components/features';
 import 'next';
 import { Metadata } from 'next';
+import { Frame, Link } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 
 
@@ -13,9 +15,18 @@ export const metadata: Metadata = {
 
 export default function Page() {
     return (
+
         <div>
             <Hero />
             <Features />
         </div>
+        /* <Frame id="toolbar-navigation">
+
+            <Button className='mt-4' asChild>
+                <Link href='/about'>About page</Link>
+            </Button>
+        </Frame>
+        */
+
     );
 }
