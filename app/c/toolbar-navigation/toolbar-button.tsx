@@ -26,7 +26,7 @@ export default function ToolbarButton({
     return (
         <Button size="icon" variant="ghost" className={cn('hover:bg-accent/30 rounded-full', href === pathname && 'ring-1 ring-primary')} asChild>
             <Link href={href} >
-                <IconSlot size={20}>
+                <IconSlot size={18}>
                     {icon}
                 </IconSlot>
                 <span className="sr-only">{title}</span>
