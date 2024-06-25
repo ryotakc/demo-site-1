@@ -30,8 +30,6 @@ export function CarouselPhoto() {
         <Carousel 
             plugins={[plugin.current]}
             className="container w-full h-full flex flex-col items-center space-y-3" 
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
         >
             <CarouselContent className="w-full h-full">
                 {photos.map((photo, index) => (
