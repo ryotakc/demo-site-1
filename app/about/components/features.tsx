@@ -8,7 +8,7 @@ export default function Features() {
 
         <Section title="Phogo Gallery" subTitle="Lorem ipsum dolor sit amet consectetur.">
             
-            <div className="grid lg:grid-cols-3 gap-4">
+            <div className="grid mb-10 lg:grid-cols-3 gap-4">
                 <Card title="Kayak" photoLink="/photograph/pic1.jpg" alt="photo1" dounloadLink="/photograph/pic1.jpg">
                     <p>Lorem ipsum dolor sit amet.</p>
                 </Card>
@@ -25,7 +25,5 @@ export default function Features() {
             </div>
 
         </Section>
-        
-
     );
 }
