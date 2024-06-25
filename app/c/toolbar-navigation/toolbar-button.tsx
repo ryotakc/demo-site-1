@@ -30,7 +30,9 @@ export default function ToolbarButton({
                     {icon}
                 </IconSlot>
                 <span className="sr-only">{title}</span>
+                <span className="opacity-0 bottom-0 translate-y-1/2 transition origin-bottom pointer-events-none scale-0 duration-500 group-aria-[current=page]:scale-100 group-aria-[current=page]:opacity-100 size-2 absolute shadow-[0_-2px_10px] shadow-sky-500 rounded-full bg-sky-500"></span>
             </Link>
+            
         </Button>
     )
 }
