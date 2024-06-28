@@ -40,8 +40,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
       >
-      {/*
-        <header className="container h-16 flex items-center border-b justify-between">
+      
+        {/* <header className="container h-16 flex items-center border-b justify-between">
           <h1 className="font-bold text-2xl">
             <Link href="/">
               <img src="/replicate-prediction-owmhs5nrsrgatfvdxkbgitirce copy.png" alt="Icon" className="size-10" />
@@ -56,8 +56,8 @@ export default function RootLayout({
                 </li>
               ))}
           </ul>
-        </header>
-      */}
+        </header> */}
+      
         <main>
           {children}
           <Toolbar />
