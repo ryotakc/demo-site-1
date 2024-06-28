@@ -1,7 +1,7 @@
 'use server';
 
 import { EmailTemplate } from "./email-template";
-import { FormData, formSchema } from "./schema";
+import { formSchema, FormData } from "./schema";
 import { Resend } from "resend";
 
 export const sendEmail = async (data: FormData) => {
