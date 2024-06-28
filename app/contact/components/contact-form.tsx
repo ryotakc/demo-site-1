@@ -36,7 +36,7 @@ export default function ContactForm() {
     }
     
     return (
-        <div className="container mx-auto pt-32">
+        <div className="container mx-auto pt-20">
             
             <div className="grid w-full max-w-sm items-center gap-1.5 mx-auto">
                 <h1 className="font-bold text-center text-primary/90 text-4xl mb-5 lg:text-6xl">Contact</h1>
@@ -85,7 +85,7 @@ export default function ContactForm() {
                 </form>
                 </Form>
 
-                <div className="flex flex-col items-center justify-center pt-32 gap-5">
+                <div className="flex flex-col items-center justify-center pt-12 gap-5">
                     <h2 className="font-bold text-2xl">SNS</h2>
                     <ul className="flex gap-3 items-center justify-center">
                         <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Linkedin color="#0077b5"></Linkedin></a></li>
