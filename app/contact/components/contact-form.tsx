@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Metadata } from "next";
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { FormData, formSchema } from "../../c/live-resend/schema";
+import { formSchema, formData } from "../../c/live-resend/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Textarea } from "@/components/ui/textarea";
 import { z } from "zod";
@@ -27,7 +27,7 @@ export default function ContactForm() {
         }
     })
 
-    const onSubmit = async (data: FormData) => {
+    const onSubmit = async (data: formData) => {
         await sendEmail(data);
 
         toast({

@@ -5,3 +5,5 @@ export const formSchema = z.object({
     email: z.string().email(),
     body: z.string().min(1),
 })
+
+export type formData = z.infer<typeof formSchema>;

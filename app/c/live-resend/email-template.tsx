@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Text, Tailwind, Heading } from '@react-email/components';
-import { FormData } from './schema';
+import { formData } from './schema';
 
 
-export const EmailTemplate: React.FC<Readonly<FormData>> = ({
+export const EmailTemplate: React.FC<Readonly<formData>> = ({
     name,
     email,
     body
-}: FormData) => (
+}: formData) => (
     <Tailwind>
         <Heading>Welcome, {name}!</Heading>
 
